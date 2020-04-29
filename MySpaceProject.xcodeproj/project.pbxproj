@@ -15,6 +15,7 @@
 		3FC7F95B245A15B400F6CF6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7F959245A15B400F6CF6D /* LaunchScreen.storyboard */; };
 		3FC7F966245A15B500F6CF6D /* MySpaceProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7F965245A15B500F6CF6D /* MySpaceProjectTests.swift */; };
 		3FC7F971245A15B500F6CF6D /* MySpaceProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7F970245A15B500F6CF6D /* MySpaceProjectUITests.swift */; };
+		3FC7F97F245A16BD00F6CF6D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7F97E245A16BD00F6CF6D /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FC7F96C245A15B500F6CF6D /* MySpaceProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySpaceProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC7F970245A15B500F6CF6D /* MySpaceProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceProjectUITests.swift; sourceTree = "<group>"; };
 		3FC7F972245A15B500F6CF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC7F97E245A16BD00F6CF6D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3FC7F954245A15B400F6CF6D /* Assets.xcassets */,
 				3FC7F959245A15B400F6CF6D /* LaunchScreen.storyboard */,
 				3FC7F95C245A15B400F6CF6D /* Info.plist */,
+				3FC7F97E245A16BD00F6CF6D /* images */,
 				3FC7F956245A15B400F6CF6D /* Preview Content */,
 			);
 			path = MySpaceProject;
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC7F97F245A16BD00F6CF6D /* images in Resources */,
 				3FC7F95B245A15B400F6CF6D /* LaunchScreen.storyboard in Resources */,
 				3FC7F958245A15B400F6CF6D /* Preview Assets.xcassets in Resources */,
 				3FC7F955245A15B400F6CF6D /* Assets.xcassets in Resources */,
