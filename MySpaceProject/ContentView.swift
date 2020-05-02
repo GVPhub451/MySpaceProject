@@ -117,7 +117,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(spaceMessier) { spaceMessier in
-                    NavigationLink(destination: SpaceMessierPage(spaceMessier: spaceMessier)) {
+                    NavigationLink(destination: SpaceScrollingView(spaceMessier: spaceMessier)) {
                         BasicImageRow(spaceMessier: spaceMessier)
                     }
                 }
@@ -139,7 +139,7 @@ struct SpaceMessierPage: View {
             Image(spaceMessier.image)
                 .resizable()
                 .scaledToFit()
-                .cornerRadius(8)
+                .cornerRadius(26)
             
             // Name
             Text(spaceMessier.name)
@@ -181,6 +181,30 @@ struct RatingView: View {
     }
 }
 
+struct SpaceScrollingView: View {
+    
+    @State private var animationStart = false
+    
+    let startAnimationDuration = 11.0
+    var spaceMessier: SpaceMessier
+    
+    var body: some View {
+        Text(spaceMessier.excerpt)
+            .fontWeight(.bold)
+            .font(.title)
+            .foregroundColor(.gray)
+            .multilineTextAlignment(.center)
+            .lineSpacing(10)
+            .padding()
+            .rotation3DEffect(.degrees(60), axis: (x: 1, y: 0, z: 0))
+            .frame(width: 300, height: animationStart ? 850 : 0)
+            .animation(Animation.linear(duration: startAnimationDuration))
+            .onAppear {
+                self.animationStart.toggle()
+            }
+    }
+}
+
 struct SpaceMessier: Identifiable {
     var id = UUID()
     var name: String
@@ -199,7 +223,7 @@ struct BasicImageRow: View {
         HStack {
             Image(spaceMessier.image)
                 .resizable()
-                .frame(width: 40, height: 40)
+                .frame(width: 60, height: 40)
                 .cornerRadius(5)
             Text(spaceMessier.name)
         }
