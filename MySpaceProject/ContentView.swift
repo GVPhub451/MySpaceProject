@@ -122,6 +122,7 @@ struct ContentView: View {
                     }
                 }
             }
+        .navigationBarTitle("Heavenly In Space")
         }
     }
 }
