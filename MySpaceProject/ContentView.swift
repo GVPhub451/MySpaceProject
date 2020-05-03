@@ -185,14 +185,14 @@ struct SpaceScrollingView: View {
     
     @State private var animationStart = false
     
-    let startAnimationDuration = 11.0
+    let startAnimationDuration = 12.0
     var spaceMessier: SpaceMessier
     
     var body: some View {
         Text(spaceMessier.excerpt)
             .fontWeight(.bold)
             .font(.title)
-            .foregroundColor(.gray)
+            .foregroundColor(.green)
             .multilineTextAlignment(.center)
             .lineSpacing(10)
             .padding()
